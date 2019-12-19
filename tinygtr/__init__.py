@@ -21,7 +21,7 @@ def parse_data(src, parser):
             idx += 1
         parser.array_end()
     elif isinstance(src, int):
-        parser.iteger_value(src)
+        parser.integer_value(src)
         parser.integer_value_as_string(str(src))
     elif isinstance(src, unicode):
         parser.string_value(src)
