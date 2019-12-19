@@ -24,7 +24,7 @@ class SarifState(object):
     # plus the function in that handler.
     # Only functions that called the state are here.
     def original_uri_base_id_add(self, uri, uriBaseId, key):
-        raise NotImplementedError("original_uri_base_ids_add")
+        raise NotImplementedError("original_uri_base_id_add")
     
     def resources_object_member_end(self, parser, key):
         raise NotImplementedError("resources_object_member_end")
@@ -45,5 +45,5 @@ class SarifState(object):
         raise NotImplementedError("results_item_array_element_end")
 
     def file_item_add(self, file_item):
-        raise NotImplementedError("files_item_array_element_end")
+        raise NotImplementedError("files_item_add")
  
