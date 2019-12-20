@@ -95,8 +95,8 @@ class WarningClass(object):
             name = id
         name = name.encode('utf-8')
         significance = extract_significance(rule.properties, tool, warning_significance.RELIABILITY)
-        rule.defaultRank = extract_rank(rule.properties, tool, rule.defaultRank)
-        rank = mk_rank(None, rule.defaultRank, rule.defaultLevel)
+        rule.defaultRank = extract_rank(rule.properties, tool, rule.rank)
+        rank = mk_rank(None, rule.defaultRank, rule.level)
         categories = augment_categories(rule.properties, [])
         warning_class = WarningClass(rule.id, name, rank, categories, significance,
                                      rule.shortDescription, rule.fullDescription,

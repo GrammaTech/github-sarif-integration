@@ -45,5 +45,5 @@ class SarifState(object):
         raise NotImplementedError("results_item_array_element_end")
 
     def file_item_add(self, file_item):
-        raise NotImplementedError("files_item_add")
+        raise NotImplementedError("file_item_add")
  

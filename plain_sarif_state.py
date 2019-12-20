@@ -25,8 +25,8 @@ class PlainSarifState(sarif_state.SarifState):
     # These functions are named for the handler they reside in
     # plus the function in that handler.
     # Only functions that called the state are here.
-    def original_uri_base_ids_object_member_end(self, parser, key):
-        print("executing SarifState.original_uri_base_ids_object_member_end")
+    def original_uri_base_id_add(self, uri, uriBaseId, key):
+        print("executing SarifState.original_uri_base_id_add %s %s %s" % (str(uri), str(uriBaseId), str(key)))
     
     def resources_object_member_end(self, parser, key):
         print("executing SarifState.resources_object_member_end %s" % str(key))
@@ -37,8 +37,8 @@ class PlainSarifState(sarif_state.SarifState):
     def rules_item_array_element_end(self, parser, idx):
         print("executing SarifState.rules_item_array_element_end %d" % idx)
 
-    def run_object_member_end(self, tool_name):
-        print("executing SarifState.run_object_member_end %s" % str(tool_name))
+    def run_object_member_end(self, tool_name, message_strings):
+        print("executing SarifState.run_object_member_end %s %s" % (str(tool_name), str(message_strings)))
 
     def run_object_start(self, parser):
         print("executing SarifState.run_object_start")
@@ -46,6 +46,6 @@ class PlainSarifState(sarif_state.SarifState):
     def results_item_array_element_end(self, parser, idx):
         print("executing SarifState.results_item_array_element_end %d" % idx)
 
-    def files_item_array_element_end(self, parser, idx):
-        print("executing SarifState.file_item_array_element_end %d" % idx)
+    def file_item_add(self, file_item):
+        print("executing SarifState.file_item_add %s" % str(file_item))
  
