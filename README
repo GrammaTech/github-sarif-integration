@@ -6,3 +6,6 @@ This code requires that the modules RxPY, graphql-core, typing, promise, gql and
 
 I can be invoked as follows:
 python annotate_pull_request.py --sarif-file <sarif filename> --pull-request <pull request #> --repo https://github.com/<name of repo>.git --token <api token> --prefix <path prefix> --dump-pr-to-file <json filename> --hosted-viewer-uri ""
+
+This material is based on research sponsored by the Department of Homeland Security (DHS) Office of Procurement Operations, S&T acquisition Division via contract number 70RSAT19C00000056.  
+The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of the Department of Homeland Security.
