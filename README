@@ -1,10 +1,10 @@
-This code allows one to annotate a giithub pull request with results from a SARIF file.
+This code allows one to annotate a GitHub pull request with results from a SARIF file.
 
 See LICENSE for the license governing the use and modification of this code.
 
 This code requires that the modules RxPY, graphql-core, typing, promise, gql and unidiff be available.
 
-I can be invoked as follows:
+It can be invoked as follows:
 python annotate_pull_request.py --sarif-file <sarif filename> --pull-request <pull request #> --repo https://github.com/<name of repo>.git --token <api token> --prefix <path prefix> --dump-pr-to-file <json filename> --hosted-viewer-uri ""
 
 This material is based on research sponsored by the Department of Homeland Security (DHS) Office of Procurement Operations, S&T acquisition Division via contract number 70RSAT19C00000056.  
